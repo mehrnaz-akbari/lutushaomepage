@@ -1,0 +1,118 @@
+.listBascketPopup {
+  position: absolute;
+  height: 400px;
+  width: 300px;
+  top: 80px;
+  right: 2%;
+  z-index: 999;
+  background-color: #fff;
+  box-shadow: 0 3px 15px #00000045;
+  border-radius: 25px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.listBascketPopup.show {
+  display: flex;
+  animation-name: showModal;
+  animation-duration: 0.3s;
+}
+.listBascketPopup.hide {
+  animation-name: hideModal;
+  animation-duration: 0.3s;
+  display: none;
+}
+@keyframes showModal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes hideModal {
+  from {
+    opacity: 1;
+    display: flex;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.listBascketPopup .list {
+  overflow-y: auto;
+  height: 335px;
+  width: 100%;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+.listBascketPopup .head {
+  height: 45px;
+  width: calc(100% - 50px);
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid;
+  color: #0b7171;
+  font-weight: 600;
+  justify-content: space-between;
+}
+.listBascketPopup .head span {
+  color: #0b7171;
+  font-weight: 600;
+}
+.listBascketItem {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  justify-content: space-between;
+}
+.listBascketItem:not(:last-child) {
+  border-bottom: 1px solid #43c4b7;
+}
+.listBascketItem button {
+  background-color: #fff;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.listBascketItem button img {
+  width: 100%;
+}
+.listBascketItem .imageDiv {
+  width: 60px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.listBascketItem .imageDiv img {
+  width: 70%;
+}
+.listBascketItem .infoDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 60%;
+  width: 50%;
+}
+.listBascketItem .infoDiv span {
+  color: #23a0a5;
+  font-size: 14px;
+}
+.emptyList {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.emptyList img {
+  width: 50%;
+  opacity: 0.3;
+}

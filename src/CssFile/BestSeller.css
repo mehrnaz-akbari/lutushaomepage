@@ -1,0 +1,119 @@
+/*bestSeller*/
+.bestSeller {
+  height: 80vh;
+  width: 50%;
+  display: inline-block;
+}
+.bestSeller .head {
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+.bestSeller .head h3 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 900;
+}
+.bestSeller .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10%;
+  width: 85%;
+  margin: 0 auto;
+}
+.bestSeller .head button{
+  background-color: #fff;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bestSeller .head button img{
+  width: 60%;
+}
+.bestSeller .listDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 90%;
+  width: 100%;
+}
+.bestSeller .listDiv .bestSellerItem {
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 0 1px 3px #0000004b;
+  width: 300px;
+  height: 500px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.bestSeller .listDiv .bestSellerItem:hover {
+  transform: scale(1.2);
+  box-shadow: 0 3px 10px #0000004b;
+}
+.bestSellerItem .imageDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  background: linear-gradient(0deg, #fff 3.69%, #b9b8b8);
+}
+.bestSellerItem .imageDiv img {
+  width: 60%;
+}
+.bestSellerItem .detailDiv {
+  background: linear-gradient(44.39deg, #50c9c3 6.16%, #96deda 94.73%);
+  box-shadow: -9px 0px 29px rgba(89, 197, 186, 0.397864);
+  border-radius: 51px;
+  border-radius: 25px;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 25px;
+  box-sizing: border-box;
+  transition:all 0.5s;
+}
+.bestSellerItem:hover .detailDiv {
+  background: linear-gradient(313.37deg, #50c9c3 6.19%, #96deda 95.6%);
+  box-shadow: -9px 0px 29px rgba(89, 197, 186, 0.397864);
+}
+.bestSellerItem .detailDiv .titleDiv {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.bestSellerItem .detailDiv .titleDiv h4 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 900;
+}
+.bestSellerItem .detailDiv p {
+  font-size: 12px;
+  color: #fff;
+  margin: 0;
+  text-align: justify;
+}
+.bestSellerItem .detailDiv .actionAndPrice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bestSellerItem .detailDiv .actionAndPrice span {
+  color: #fff;
+}
+.bestSellerItem .detailDiv .actionAndPrice button {
+  background-color: #23a0a5;
+  color: #fff;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 28px;
+}

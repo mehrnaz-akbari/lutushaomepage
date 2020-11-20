@@ -1,0 +1,124 @@
+.productList {
+  width: 38%;
+  height: 80vh;
+  padding: 0 5%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.productList h3 {
+  color: #23a0a5;
+  font-weight: 600;
+  height: 10%;
+  margin: 0;
+  font-size: 40px;
+  text-align: center;
+}
+.productList > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  height: 90%;
+}
+.productList > div .productItem {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 150px;
+  box-shadow: -3px 1px 15px rgba(0, 0, 0, 0.185);
+  width: 380px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+.productList > div .productItem:hover {
+  background: linear-gradient(44.39deg, #50c9c3 6.16%, #96deda 94.73%);
+  width: 440px;
+}
+.productItem .btnDiv {
+  display: flex;
+  align-items: flex-end;
+  height: 70%;
+  width: 50px;
+}
+.productItem .btnDiv button {
+  background-color: #23a0a5;
+  color: #fff;
+  border: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  font-size: 24px;
+  transition: 0.3s;
+}
+.productItem:hover .btnDiv button {
+  color: #23a0a5;
+  background-color: #fff;
+}
+
+.productItem .infoDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80%;
+  width: 320px;
+}
+.productItem .infoDiv .imageDiv {
+  background-color: rgb(240, 240, 240);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productItem .infoDiv .imageDiv img {
+  width: 70%;
+}
+.productItem .infoDiv .titleDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 60%;
+  width: 50%;
+}
+.productItem .infoDiv .titleDiv .title {
+  color: #23a0a5;
+  font-weight: 600;
+}
+.productItem .infoDiv .titleDiv .subtitle {
+  font-size: 12px;
+  color: #b3b3b3;
+}
+.productItem:hover .infoDiv .titleDiv span {
+  color: #fff;
+}
+.productItem .priceDiv {
+  position: relative;
+  width: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.productItem:hover .priceDiv {
+  width: 50px;
+}
+.productItem .priceDiv span {
+  opacity: 0;
+  position: absolute;
+  transform: rotate(90deg) translate(60%, -85%);
+  width: 100px;
+  background-color: #25a2a6;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  border-radius: 15px;
+  top: 0;
+  right: 0;
+  transition: 0.2s;
+}
+.productItem:hover .priceDiv span {
+  opacity: 1;
+}
